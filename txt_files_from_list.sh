@@ -2,7 +2,7 @@
 # This script makes multiple txt files from a list provided via -l flag
 
 function usage {
-	echo i"./$(basename $0) -h --> shows usage"
+	echo "./$(basename $0) -h --> shows usage"
 }
 
 # This are the flags expected in the input
