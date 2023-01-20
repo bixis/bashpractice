@@ -21,7 +21,7 @@ while getopts $optstring options; do
 		   	echo "$basename $0 t ../exampleDir"
 		   	exit 1;;
 	   	?)
-			echo "Invalid option -${PTARG}"
+			echo "Invalid option -${OPTARG}"
 			exit 2;;
 
 	esac
