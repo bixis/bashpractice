@@ -2,7 +2,8 @@
 # This script makes multiple txt files from a list provided via -l flag
 
 function usage {
-	echo "./$(basename $0) -h --> shows usage"
+	echo -e "usage: ./$(basename $0) -l 'element1 element2 element3'"
+	echo -e "Above command creates 3 files: \n - element1.txt \n - element2.txt \n - element3.txt"
 }
 
 # This are the flags expected in the input
@@ -33,5 +34,3 @@ do
 	touch $FILE".txt"
 done
 exit 0
-
-

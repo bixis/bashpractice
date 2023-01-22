@@ -2,7 +2,9 @@
 # This script counts the files inside the specified directory.
 
 function usage {
-	echo "./$(basename $0) -h --> shows usage"
+	echo "usage: ./$(basename $0) -t ~/Desktop"
+	echo -e "Above command will output the number of files located in the target directory"
+	echo "Please keep in mind that using this script without the -t flag will cause a wrong count"
 }
 
 # This are the flags expected in the input
@@ -29,4 +31,3 @@ done
 
 echo `ls ${TARGET_DIR} | wc -l`
 exit 0
-
